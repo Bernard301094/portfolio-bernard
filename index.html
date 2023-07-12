@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">Bernard</a>
             </div>
             <nav id="nav">
                 <ul>
@@ -35,16 +35,15 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/foto-perfil.webp" alt="Foto perfil Bernard">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Bernard De Freitas</h1>
+            <h2>Front-end Developer</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                
             </div>
         </div>
     </section>
@@ -127,10 +126,11 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a class="cv" href="ruta/al/archivo.pdf" download target="_blank">
+                <button>Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -365,13 +365,13 @@
                     <input type="text" placeholder="Tema">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
-                    <img src="img/ubicacion.png" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127394.50279048862!2d-38.602017331687556!3d-3.7931392435571456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20Cear%C3%A1!5e0!3m2!1ses-419!2sbr!4v1689136746171!5m2!1ses-419!2sbr" width="80%" height="284.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="info">
                         <ul>
                             <li>
@@ -399,14 +399,12 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
