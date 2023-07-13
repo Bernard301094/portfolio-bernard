@@ -39,3 +39,33 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+
+
+// Funcion Enviar Correo 
+
+function enviarCorreo() {
+    // Obtener los valores del formulario
+    var nombre = document.getElementById('nombre').value;
+    var telefono = document.getElementById('telefono').value;
+    var correo = document.getElementById('correo').value;
+    var asunto = document.getElementById('asunto').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    // Configurar los detalles del correo electrónico
+    var destinatario = 'bernard30101994@gmail.com'; // Reemplaza con tu dirección de correo electrónico
+    var cuerpoCorreo = 'Nombre: ' + nombre + '\nTeléfono: ' + telefono + '\nCorreo electrónico: ' + correo + '\nAsunto: ' + asunto + '\nMensaje: ' + mensaje;
+
+    // Enviar el correo electrónico usando SMTPJS
+    Email.send({
+      SecureToken: 'tu_token_seguro', // Reemplaza con tu token seguro de SMTPJS
+      To: destinatario,
+      From: correo,
+      Subject: asunto,
+      Body: cuerpoCorreo
+    }).then(function () {
+      alert('¡El correo electrónico se envió correctamente!');
+    }).catch(function (error) {
+      alert('Hubo un error al enviar el correo electrónico: ' + error);
+    });
+  }
