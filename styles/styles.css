@@ -594,16 +594,17 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
+.contacto .col h3{
+    color: #1CB698 ;
 }
+
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 58.7%;
     background-color: #252A2E;
+    width: 405px;
     padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
+    left: 38%;
     transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
@@ -683,7 +684,7 @@ footer .arriba{
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
     .sobremi .fila{
         display: block;
     }
@@ -726,5 +727,13 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+
+    .contacto .col iframe{
+        width: 100%;
+    }
+
+    .contacto .col .info{
+        display: none;
     }
 }
