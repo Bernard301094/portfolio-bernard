@@ -731,10 +731,13 @@ footer .arriba{
     }
 
     .contacto .col iframe{
-        width: 100%;
+        display: none;
     }
 
     .contacto .col .info{
+        display: none;
+    }
+    .h3-ubicacion {
         display: none;
     }
 }
