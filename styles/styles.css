@@ -600,9 +600,9 @@ html{
 
 .contacto .col .info{
     background-color: #252A2E;
-    width: 400px;
+    width: 85%;
     padding: 20px;
-    margin-top: 11px;
+    margin-top: 12px;
 }
 .contacto .col .info ul{
     list-style: none;
