@@ -48,15 +48,16 @@
 }
 .skills .skill .barra-skill span{
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: #1CB698;
     border-radius: 50px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: center;
-    top: -17px;
+    top: -12px;
     right: -15px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
@@ -65,7 +66,7 @@
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 40%;}
 }
 
 .skills .skill .htmlcss{
@@ -74,34 +75,34 @@
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .git{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s git forwards;
 }
-@keyframes photoshop {
+@keyframes git {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 60%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .react{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s react forwards;
 }
-@keyframes wordpress {
+@keyframes react {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 10%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .python{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s python forwards;
 }
-@keyframes drupal {
+@keyframes python {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 5%;}
 }
 
 .skills .skill .comunicacion{
@@ -119,7 +120,7 @@
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .creatividad{
@@ -137,7 +138,7 @@
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .proyect{
