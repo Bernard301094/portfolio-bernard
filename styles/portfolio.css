@@ -19,6 +19,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.portfolio .galeria > a{
+    color: inherit;
+}
 .portfolio .galeria .proyecto{
     position: relative;
     max-width: 340px;
