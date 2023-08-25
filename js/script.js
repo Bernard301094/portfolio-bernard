@@ -40,6 +40,23 @@ window.onscroll = function(){
     efectoHabilidades();
 } 
 
+// Función descargar curriculo en idioma dependiendo del idioma que habla la persona
+function descargarCV() {
+  var idioma = navigator.language.toLowerCase();
+  var nombreArchivo;
 
+  if (idioma.startsWith('es')) {
+      nombreArchivo = 'CURRICULO-ESP.pdf';
+  } else if (idioma.startsWith('pt')) {
+      nombreArchivo = 'CURRICULO_PT-Br.pdf';
+  } else {
+      // En caso de no ser español ni portugués, usar un archivo genérico
+      nombreArchivo = 'CURRICULUM.pdf';
+  }
 
+  var link = document.createElement('a');
+  link.href = 'pdf/' + nombreArchivo;
+  link.download = nombreArchivo;
+  link.click();
+}
 // Funcion Enviar Correo 
