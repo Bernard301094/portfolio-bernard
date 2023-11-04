@@ -48,7 +48,7 @@ function descargarCV() {
   if (idioma.startsWith('es')) {
       nombreArchivo = 'CURRICULO-ESP.pdf';
   } else if (idioma.startsWith('pt')) {
-      nombreArchivo = 'CURRICULO_PT-Br.pdf';
+      nombreArchivo = 'CURRICULO-PT-Br.pdf';
   } else {
       // En caso de no ser español ni portugués, usar un archivo genérico
       nombreArchivo = 'CURRICULUM.pdf';
@@ -59,4 +59,5 @@ function descargarCV() {
   link.download = nombreArchivo;
   link.click();
 }
+
 // Funcion Enviar Correo 

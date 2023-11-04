@@ -13,8 +13,8 @@
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
+
 .curriculum .fila{
     display: flex;
     justify-content: space-between;
@@ -62,6 +62,7 @@
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
+
 .curriculum .fila .der{
     border-left: 2px solid #1CB698;
     margin-left: 20px;
