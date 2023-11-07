@@ -64,26 +64,34 @@ function descargarCV() {
 
 // Función cambiar idioma portfolio
 
+Si deseas mantener la estructura del código existente sin modificar la función `traducirSitioWeb` pero al mismo tiempo evitar que el código altere el contenido del elemento `h1`, puedes hacer uso de un enfoque que clona el contenido del elemento `h1`, realiza la traducción en el contenido del sitio web excluyendo el elemento `h1`, y luego restaura el contenido clonado en el elemento `h1. Aquí está cómo puedes hacerlo:
+
+```javascript
 function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
-    // Obtener el contenido del sitio web
-    const contenido = document.querySelector("body").innerHTML;
-  
-    // Traducir el contenido
-    const traduccion = traducir(contenido, idiomaOrigen, idiomaDestino);
-  
-    // Actualizar el contenido del sitio web
-    document.querySelector("body").innerHTML = traduccion;
-  }
-  
-  // Función para traducir el texto
-  function traducir(texto, idiomaOrigen, idiomaDestino) {
-    // Obtener la API de traducción
-    const translate = new google.translate.Translate();
-  
-    // Traducir el texto
-    return translate.translate(texto, {
-      from: idiomaOrigen,
-      to: idiomaDestino,
-    });
-  }
-  
+  // Obtener el contenido del sitio web
+  const contenido = document.querySelector("body").innerHTML;
+
+  // Obtener el contenido del elemento h1
+  const titulo = document.getElementById("titulo").innerHTML;
+
+  // Traducir el contenido del sitio web, excluyendo el contenido de h1
+  const contenidoTraducido = traducir(contenido, idiomaOrigen, idiomaDestino);
+
+  // Actualizar el contenido del sitio web sin afectar el contenido de h1
+  document.querySelector("body").innerHTML = contenidoTraducido;
+
+  // Restaurar el contenido del elemento h1
+  document.getElementById("titulo").innerHTML = titulo;
+}
+
+// Función para traducir el texto
+function traducir(texto, idiomaOrigen, idiomaDestino) {
+  // Obtener la API de traducción
+  const translate = new google.translate.Translate();
+
+  // Traducir el texto
+  return translate.translate(texto, {
+    from: idiomaOrigen,
+    to: idiomaDestino,
+  });
+}
