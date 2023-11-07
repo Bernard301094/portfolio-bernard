@@ -72,7 +72,8 @@ function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
     const traduccion = traducir(contenido, idiomaOrigen, idiomaDestino);
   
     // Actualizar el contenido del sitio web
-    document.querySelector("body").innerHTML = traduccion;
+    const body = document.querySelector("body");
+    body.innerHTML = traduccion.replaceAll("<h1>", "<h1 class=\"traducido\">");
   }
   
   // Función para traducir el texto
