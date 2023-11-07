@@ -65,7 +65,6 @@ function descargarCV() {
 // Función cambiar idioma portfolio
 
 function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
-<<<<<<< HEAD
   // Obtener el contenido del sitio web
   const contenido = document.querySelector("body").innerHTML;
 
@@ -93,30 +92,3 @@ function traducir(texto, idiomaOrigen, idiomaDestino) {
     to: idiomaDestino,
   });
 }
-=======
-    // Obtener el contenido del sitio web
-    const contenido = document.querySelector("body").innerHTML;
-  
-    // Obtener el contenido del elemento h1
-    const titulo = document.getElementById("titulo").innerHTML;
-  
-    // Traducir el contenido del sitio web, excluyendo el contenido de h1
-    const contenidoTraducido = traducir(contenido, idiomaOrigen, idiomaDestino);
-  
-    // Actualizar el contenido del sitio web
-    document.querySelector("body").innerHTML = traduccion;
-  }
-  
-  // Función para traducir el texto
-  function traducir(texto, idiomaOrigen, idiomaDestino) {
-    // Obtener la API de traducción
-    const translate = new google.translate.Translate();
-  
-    // Traducir el texto
-    return translate.translate(texto, {
-      from: idiomaOrigen,
-      to: idiomaDestino,
-    });
-  }
-  
->>>>>>> 1de2936412115b562ff3c84b674aff93cdca1678
