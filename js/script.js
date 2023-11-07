@@ -61,3 +61,29 @@ function descargarCV() {
 }
 
 // Funcion Enviar Correo 
+
+// Función cambiar idioma portfolio
+
+function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
+    // Obtener el contenido del sitio web
+    const contenido = document.querySelector("body").innerHTML;
+  
+    // Traducir el contenido
+    const traduccion = traducir(contenido, idiomaOrigen, idiomaDestino);
+  
+    // Actualizar el contenido del sitio web
+    document.querySelector("body").innerHTML = traduccion;
+  }
+  
+  // Función para traducir el texto
+  function traducir(texto, idiomaOrigen, idiomaDestino) {
+    // Obtener la API de traducción
+    const translate = new google.translate.Translate();
+  
+    // Traducir el texto
+    return translate.translate(texto, {
+      from: idiomaOrigen,
+      to: idiomaDestino,
+    });
+  }
+  
