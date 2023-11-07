@@ -69,7 +69,7 @@ function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
   const contenido = document.querySelector("body").innerHTML;
 
   // Obtener el contenido del elemento h1
-  const titulo = document.getElementById("titulo").innerHTML;
+  const titulo = document.getElementsByTagName("h1").innerHTML;
 
   // Traducir el contenido del sitio web, excluyendo el contenido de h1
   const contenidoTraducido = traducir(contenido, idiomaOrigen, idiomaDestino);
@@ -78,7 +78,7 @@ function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
   document.querySelector("body").innerHTML = contenidoTraducido;
 
   // Restaurar el contenido del elemento h1
-  document.getElementById("titulo").innerHTML = titulo;
+  document.getElementsByTagName("h1").innerHTML = titulo;
 }
 
 // Función para traducir el texto
