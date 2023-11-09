@@ -323,17 +323,22 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tu Nombre" required>
-                    <input type="number" placeholder="Número telefónico" pattern="^[0-9]+$" inputmode="numeric" required>
-                    <input type="email" placeholder="Dirección de correo" required>
-                    <input type="text" placeholder="Tema" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
+    <div class="col">
+        <form class="mu-contact-form" action="https://formsubmit.co/e4c5880a4460e26bd0d83585de29861a" method="POST">
+            <input type="text" placeholder="Tu Nombre" name="text" required>
+            <input type="number" placeholder="Número telefónico" name="number" pattern="^[0-9]+$" inputmode="numeric" required>
+            <input type="email" placeholder="Dirección de correo" name="email" required>
+            <input type="text" placeholder="Tema" name="text" required> <!-- Aquí se arregla el cierre de comillas en name -->
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea> <!-- Aquí se agrega el atributo id -->
+            <button>
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+            </button>
+            <input type="hidden" name="_next" value="https://bernard-portfolio.netlify.app/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
                 <!-- Mapa -->
                 <div class="col">
                     <h3 class="h3-ubicacion">Mi Ubicación</h3>
