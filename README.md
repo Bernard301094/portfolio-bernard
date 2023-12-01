@@ -4,13 +4,13 @@
 
 Dentro de este portafolio, encontrarás una variedad de proyectos que destacan mi compromiso con la creación de soluciones visuales y funcionales. Algunos de los puntos destacados incluyen:
 
-## Sitio web de Portafolio Personal 🌐
+* Sitio web de Portafolio Personal 🌐
 Una vitrina en línea que refleja mi estilo y habilidades, mostrando mi trabajo de manera única y cautivadora.
 
-## Blog sobre Desarrollo Web 📝
+* Blog sobre Desarrollo Web 📝
 Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demostrando mi participación activa en la comunidad y mi interés continuo en el campo.
 
-## Portafolio de Trabajos de Diseño 🎨
+* Portafolio de Trabajos de Diseño 🎨
 Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
 
 ### Tecnologías Utilizadas
