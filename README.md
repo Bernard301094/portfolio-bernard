@@ -1,10 +1,10 @@
-# Portafolio de Bernard 🚀
+* Portafolio de Bernard 🚀
 
 ¡Hola, sea bienvenido/a a mi portafolio! 👋
 
 Dentro de este portafolio, encontrarás una variedad de proyectos que destacan mi compromiso con la creación de soluciones visuales y funcionales. Algunos de los puntos destacados incluyen:
 
-## Sitio web de Portafolio Personal 🌐
+** Sitio web de Portafolio Personal 🌐
 Una vitrina en línea que refleja mi estilo y habilidades, mostrando mi trabajo de manera única y cautivadora.
 
 ## Blog sobre Desarrollo Web 📝
