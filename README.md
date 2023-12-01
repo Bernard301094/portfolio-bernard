@@ -16,7 +16,7 @@ Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando un
 ### Tecnologías Utilizadas
 - HTML5
 - CSS3
-- JavaScript <i class="fab fa-js"></i>
+- JavaScript
 
 Este portafo]lio también proporciona información detallada sobre mis habilidades técnicas, herramientas dominadas y experiencias personales. Estoy entusiasmado por compartir mi trayectoria y contribuir a proyectos innovadores en el futuro.
 
