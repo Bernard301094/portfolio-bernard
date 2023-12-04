@@ -14,7 +14,7 @@ Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demos
 Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
 
 ### Tecnologías Utilizadas
-- HTML5
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
 - CSS3
 - JavaScript
 
