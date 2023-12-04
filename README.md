@@ -23,3 +23,4 @@ Este portafo]lio también proporciona información detallada sobre mis habilidad
 ¡Siéntete libre de explorar y conocer más sobre mi trabajo y recorrido en el desarrollo front-end! 🚀
 
 **Visita mi portafolio:** [bernard-portfolio.netlify.app](https://bernard-portfolio.netlify.app/)
+[LinkedIn](https://www.linkedin.com/in/tu-nombre/)
