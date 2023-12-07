@@ -14,12 +14,13 @@ Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demos
 Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
 
 ### Tecnologías Utilizadas
-- HTML5
-- CSS3
-- JavaScript
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
 Este portafo]lio también proporciona información detallada sobre mis habilidades técnicas, herramientas dominadas y experiencias personales. Estoy entusiasmado por compartir mi trayectoria y contribuir a proyectos innovadores en el futuro.
 
 ¡Siéntete libre de explorar y conocer más sobre mi trabajo y recorrido en el desarrollo front-end! 🚀
 
 **Visita mi portafolio:** [bernard-portfolio.netlify.app](https://bernard-portfolio.netlify.app/)
+
