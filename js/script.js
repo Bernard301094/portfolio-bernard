@@ -28,7 +28,7 @@ function efectoHabilidades(){
         habilidades[4].classList.add("python");
         habilidades[5].classList.add("comunicacion");
         habilidades[6].classList.add("trabajo");
-        habilidades[7].classList.add("creatividad");
+        habilidades[7].classList.add("proactividad");
         habilidades[8].classList.add("dedicacion");
         habilidades[9].classList.add("proyect");
     }

@@ -123,11 +123,11 @@
     100%{width: 90%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .proactividad{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s proactividad forwards;
 }
-@keyframes creatividad {
+@keyframes proactividad{
     0%{width: 0%;}
     100%{width: 99%;}
 }
