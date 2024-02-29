@@ -125,7 +125,7 @@
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.sobremi .fila .col .contenedor-intereses .interes .interes-i{
     font-size: 30px;
     margin-bottom: 10px;
 }
