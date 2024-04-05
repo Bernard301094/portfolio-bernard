@@ -8,29 +8,40 @@
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Bernard</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
+    
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">Bernard</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                <li class="dropdown" id="language-dropdown">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown()">
+                        <img src="/img/svg/es.svg" alt="Español" width="24" height="24">
+                        <span>Español</span>
+                    </a>
+                    <ul class="dropdown-menu hidden" id="language-menu" onclick="selectLanguage(event)">
+                        <li><img src="/img/svg/es.svg" alt="Español" width="24" height="24"> Español</li>
+                        <li><img src="/img/svg/br.svg" alt="Português" width="24" height="24"> Português</li>
+                        <li><img src="/img/svg/us.svg" alt="English" width="24" height="24"> English</li>
+                    </ul>
+                </li>
                 
-
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
@@ -128,7 +139,7 @@
                             <div class="interes-i">
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
-                            <span>DEV<span>
+                            <span>DEV</span>
                         </div>
                         <div class="interes">
                             <div class="interes-i">

@@ -44,3 +44,72 @@
     cursor: pointer;
     display: none;
 }
+
+
+
+
+
+
+
+
+.dropdown-menu.hidden {
+    display: none; /* Oculta el menú por defecto */
+}
+
+.dropdown-menu.show {
+    display: block; /* Muestra el menú cuando tiene la clase 'show' */
+    background-color: #1a1a1a; /* Color de fondo del menú desplegado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    margin-left: 18px; /* Agrega margen a la izquierda para alinear con el enlace */
+    width: auto; /* Ajusta automáticamente el ancho del menú */
+    min-width: 150px; /* Ancho mínimo del menú */
+}
+
+.dropdown-menu li {
+    color: #fff;
+    border-bottom: 1px solid #fff; /* Agrega una línea blanca debajo de cada opción */
+    padding: 10px 15px; /* Aumenta el relleno superior e inferior */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Elimina la línea inferior del último elemento */
+}
+
+.dropdown-menu li:hover {
+    color: #1CB698; /* Color verde al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las opciones */
+}
+
+.dropdown-toggle.active {
+    color: #1CB698; /* Color de texto para la opción seleccionada */
+}
+
+.dropdown-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute; /* Ajusta la posición del menú */
+    z-index: 1; /* Asegura que el menú esté encima de otros elementos */
+    top: 100%; /* Coloca el menú debajo del enlace */
+    left: 0; /* Alinea el menú con el borde izquierdo del enlace */
+}
+
+.dropdown {
+    position: relative; /* Ajusta la posición del elemento padre del menú desplegable */
+}
+
+.dropdown-toggle {
+    text-align: center; /* Centra horizontalmente el contenido del enlace */
+    line-height: 24px; /* Ajusta la altura de línea para centrar verticalmente */
+}
+
+.dropdown-toggle > * {
+    display: inline; /* Muestra los elementos hijos directos en línea */
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    margin-right: 5px; /* Agrega un pequeño margen entre los elementos */
+}
+
+.dropdown-menu li > * {
+    display: inline; /* Muestra los elementos hijos directos en línea */
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    margin-right: 5px; /* Agrega un pequeño margen entre los elementos */
+}
+

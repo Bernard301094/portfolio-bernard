@@ -21,8 +21,8 @@
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-
 }
+
 @media screen and (max-width:768px){
     .sobremi .fila{
         display: block;
@@ -73,6 +73,18 @@
         display: none;
     }
     .h3-ubicacion {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+    }
+
+    .dropdown-menu {
         display: none;
     }
 }

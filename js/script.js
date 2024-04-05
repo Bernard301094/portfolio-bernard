@@ -36,35 +36,55 @@ function descargarCV() {
   link.click();
 }
 
-// Funcion Enviar Correo 
 
-// Función cambiar idioma portfolio
 
-function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
-  // Obtener el contenido del sitio web
-  const contenido = document.querySelector("body").innerHTML;
 
-  // Obtener el contenido del elemento h1
-  const titulo = document.getElementsByTagName("h1").innerHTML;
 
-  // Traducir el contenido del sitio web, excluyendo el contenido de h1
-  const contenidoTraducido = traducir(contenido, idiomaOrigen, idiomaDestino);
 
-  // Actualizar el contenido del sitio web sin afectar el contenido de h1
-  document.querySelector("body").innerHTML = contenidoTraducido;
 
-  // Restaurar el contenido del elemento h1
-  document.getElementsByTagName("h1").innerHTML = titulo;
+
+
+
+
+
+
+
+
+
+
+// Función para mostrar/ocultar el menú desplegable
+function toggleDropdown() {
+    var dropdown = document.getElementById('language-menu');
+    dropdown.classList.toggle('show');
 }
 
-// Función para traducir el texto
-function traducir(texto, idiomaOrigen, idiomaDestino) {
-  // Obtener la API de traducción
-  const translate = new google.translate.Translate();
+// Función para cerrar el menú desplegable si se hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-toggle')) {
+        var dropdowns = document.getElementsByClassName('dropdown-menu');
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
 
-  // Traducir el texto
-  return translate.translate(texto, {
-    from: idiomaOrigen,
-    to: idiomaDestino,
-  });
+// Activar el primer elemento del menú al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+    var firstItem = document.getElementById('language-menu').querySelector('li');
+    firstItem.click(); // Simula un clic en el primer elemento
+});
+
+// Función para seleccionar una opción del menú
+function selectLanguage(event) {
+    var target = event.target;
+    if (target.tagName === 'LI') {
+        var selectedLanguage = target.textContent.trim();
+        var dropdownToggle = document.querySelector('.dropdown-toggle');
+        dropdownToggle.innerHTML = target.innerHTML;
+        dropdownToggle.classList.add('active'); // Agregamos la clase 'active' al enlace
+        toggleDropdown(); // Oculta el menú después de seleccionar una opción
+    }
 }
