@@ -10,7 +10,7 @@ Una vitrina en línea que refleja mi estilo y habilidades, mostrando mi trabajo 
 * Blog sobre Desarrollo Web 📝
 Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demostrando mi participación activa en la comunidad y mi interés continuo en el campo.
 
-* Portafolio de Trabajos de Diseño 🎨
+* Portafólio de Trabajos de Diseño 🎨
 Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
 
 ### Tecnologías Utilizadas
