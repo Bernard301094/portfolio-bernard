@@ -10,7 +10,7 @@ Una vitrina en línea que refleja mi estilo y habilidades, mostrando mi trabajo 
 * Blog sobre Desarrollo Web 📝
 Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demostrando mi participación activa en la comunidad y mi interés continuo en el campo.
 
-* Portafolio de Trabajos de Diseño 🎨
+* Portafólio de Trabajos de Diseño 🎨
 Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
 
 ### Tecnologías Utilizadas
@@ -18,7 +18,7 @@ Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando un
 <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
 <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
-Este portafo]lio también proporciona información detallada sobre mis habilidades técnicas, herramientas dominadas y experiencias personales. Estoy entusiasmado por compartir mi trayectoria y contribuir a proyectos innovadores en el futuro.
+Este portafolio también proporciona información detallada sobre mis habilidades técnicas, herramientas dominadas y experiencias personales. Estoy entusiasmado por compartir mi trayectoria y contribuir a proyectos innovadores en el futuro.
 
 ¡Siéntete libre de explorar y conocer más sobre mi trabajo y recorrido en el desarrollo front-end! 🚀
 
