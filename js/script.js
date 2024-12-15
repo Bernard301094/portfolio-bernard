@@ -35,36 +35,3 @@ function descargarCV() {
   link.download = nombreArchivo;
   link.click();
 }
-
-// Funcion Enviar Correo 
-
-// Función cambiar idioma portfolio
-
-function traducirSitioWeb(idiomaOrigen, idiomaDestino) {
-  // Obtener el contenido del sitio web
-  const contenido = document.querySelector("body").innerHTML;
-
-  // Obtener el contenido del elemento h1
-  const titulo = document.getElementsByTagName("h1").innerHTML;
-
-  // Traducir el contenido del sitio web, excluyendo el contenido de h1
-  const contenidoTraducido = traducir(contenido, idiomaOrigen, idiomaDestino);
-
-  // Actualizar el contenido del sitio web sin afectar el contenido de h1
-  document.querySelector("body").innerHTML = contenidoTraducido;
-
-  // Restaurar el contenido del elemento h1
-  document.getElementsByTagName("h1").innerHTML = titulo;
-}
-
-// Función para traducir el texto
-function traducir(texto, idiomaOrigen, idiomaDestino) {
-  // Obtener la API de traducción
-  const translate = new google.translate.Translate();
-
-  // Traducir el texto
-  return translate.translate(texto, {
-    from: idiomaOrigen,
-    to: idiomaDestino,
-  });
-}
