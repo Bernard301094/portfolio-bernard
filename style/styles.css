@@ -562,8 +562,9 @@ header.scrolled {
 }
 
 textarea.form-control {
-  min-height: 150px;
-  resize: vertical;
+  min-height: 180px;
+  resize: none;
+  width: 100%;
 }
 
 /* Estilos para el selector de idiomas */
