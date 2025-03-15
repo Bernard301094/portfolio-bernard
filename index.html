@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
   <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- Header -->
@@ -29,26 +30,51 @@
   <section class="hero">
     <div class="container hero-content">
       <h1>Bienvenido a mi portafolio</h1>
-      <p>Desarrollador web, diseñador y apasionado por la tecnología.</p>
+      <p>Estudiante de Desarrollo Full Stack y apasionado por la tecnología</p>
       <a href="#about" class="btn">Saber Más</a>
     </div>
   </section>
   
   <!-- Sobre Mí Section -->
   <section id="about" class="section about">
-    <div class="container about-content">
-      <div class="about-img">
-        <img src="img/1737077361354.jpeg" alt="Sobre Mí">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sobre Mí</h2>
       </div>
-      <div class="about-text">
-        <h3>Sobre Mí</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
-        <div class="skills">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <!-- Agrega más habilidades según necesites -->
-          </ul>
+      <div class="about-content">
+        <div class="about-col">
+          <div class="about-img">
+            <img src="img/1737077361354.jpeg" alt="Sobre Mí">
+          </div>
+        </div>
+        <div class="about-col">
+          <div class="about-text">
+            <p>Soy estudiante de Análisis y Desarrollo de Sistemas con especialización en desarrollo web full-stack. Estoy en proceso de aprendizaje constante, enfocado en adquirir conocimientos de programación front-end y back-end para crear aplicaciones web completas.</p>
+            <p>Siempre en busca de aprendizaje y retos, disfruto colaborando en equipo, resolviendo problemas y desarrollando soluciones prácticas y eficientes. La capacidad de adaptación a nuevos entornos y el aprendizaje continuo son características que me motivan para crecer y contribuir positivamente al sector tecnológico.</p>
+            <p>Mi objetivo es continuar mi formación, aplicar mis conocimientos en proyectos reales y eventualmente convertirme en un desarrollador full stack profesional.</p>
+          </div>
+          <div class="skills-wrapper">
+            <div class="skills-category hard-skills">
+              <h4>Hard Skills</h4>
+              <ul>
+                <li><i class="fab fa-html5"></i> <span>HTML5</span></li>
+                <li><i class="fab fa-css3-alt"></i> <span>CSS3</span></li>
+                <li><i class="fab fa-js"></i> <span>JavaScript</span></li>
+                <li><i class="fab fa-react"></i> <span>React</span></li>
+                <li><i class="fas fa-database"></i> <span>SQL</span></li>
+                <li><i class="fab fa-git-alt"></i> <span>Git</span></li>
+                <li><i class="fas fa-mobile-alt"></i> <span>Responsive Design</span></li>
+              </ul>
+            </div>
+            <div class="skills-category soft-skills">
+              <h4>Soft Skills</h4>
+              <ul>
+                <li><i class="fas fa-users"></i> <span>Trabajo en Equipo</span></li>
+                <li><i class="fas fa-book-reader"></i> <span>Aprendizaje Continuo</span></li>
+                <li><i class="fas fa-puzzle-piece"></i> <span>Resolución de Problemas</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -63,15 +89,24 @@
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-code"></i></div>
-          <h3>Desarrollo Web</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Desarrollo Front-end</h3>
+          <p>Creación de interfaces atractivas y funcionales con HTML, CSS y JavaScript.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-          <h3>Diseño Gráfico</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h3>Desarrollo Back-end</h3>
+          <p>Implementación de lógica de servidor y bases de datos para aplicaciones web.</p>
         </div>
-        <!-- Más servicios -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Diseño Responsive</h3>
+          <p>Adaptación de sitios web para una experiencia óptima en todos los dispositivos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>Control de Versiones</h3>
+          <p>Gestión de proyectos con Git para un desarrollo organizado y colaborativo.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -84,22 +119,51 @@
       </div>
       <div class="portfolio-filter">
         <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="design">Diseño</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
       </div>
       <div class="portfolio-grid">
-        <div class="portfolio-item" data-category="web">
-          <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio-img">
+        <div class="portfolio-item" data-category="frontend">
           <div class="portfolio-overlay">
-            <h3>Proyecto 1</h3>
-            <p>Descripción corta</p>
+            <h3>Landing Page Responsive</h3>
+            <p>HTML, CSS y JavaScript</p>
             <div class="portfolio-btn">
               <a href="#"><i class="fas fa-link"></i></a>
               <a href="#"><i class="fas fa-search"></i></a>
             </div>
           </div>
         </div>
-        <!-- Más proyectos -->
+        <div class="portfolio-item" data-category="backend">
+          <div class="portfolio-overlay">
+            <h3>API RESTful</h3>
+            <p>Node.js y Express</p>
+            <div class="portfolio-btn">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="fullstack">
+          <div class="portfolio-overlay">
+            <h3>Aplicación Web</h3>
+            <p>React y Node.js</p>
+            <div class="portfolio-btn">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="frontend">
+          <div class="portfolio-overlay">
+            <h3>Dashboard Interactivo</h3>
+            <p>JavaScript y Chart.js</p>
+            <div class="portfolio-btn">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -115,21 +179,21 @@
           <div class="contact-icon"><i class="fas fa-phone"></i></div>
           <div class="contact-text">
             <h4>Teléfono</h4>
-            <p>+123 456 7890</p>
+            <p>+55 85 99741-6114</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="fas fa-envelope"></i></div>
           <div class="contact-text">
             <h4>Email</h4>
-            <p>correo@ejemplo.com</p>
+            <p>bernard30101994@gmail.com</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="contact-text">
             <h4>Dirección</h4>
-            <p>Ciudad, País</p>
+            <p>Fortaleza, Brasil</p>
           </div>
         </div>
       </div>
@@ -153,7 +217,6 @@
     <div class="container footer-content">
       <div>
         <div class="footer-logo">Mi<span>Portafolio</span></div>
-        <p class="footer-text">Diseñado y desarrollado por [Tu Nombre].</p>
       </div>
       <div>
         <h4>Enlaces</h4>
@@ -178,25 +241,6 @@
   </footer>
   
   <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script>
-    // JavaScript para el menú móvil
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-    
-    // Cambiar estilo del header al hacer scroll
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  </script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
