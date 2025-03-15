@@ -10,12 +10,14 @@
   --color-tertiary: #ec4899;
   --color-text: #f1f5f9;
   --color-text-muted: #94a3b8;
+  --color-white: #ffffff;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 20px;
+  --border-radius-xs: 4px;
   --font-main: 'Inter', 'Segoe UI', sans-serif;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -562,6 +564,47 @@ header.scrolled {
 textarea.form-control {
   min-height: 150px;
   resize: vertical;
+}
+
+/* Estilos para el selector de idiomas */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-sm);
+  padding: 0.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.language-option {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-xs);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: var(--transition);
+}
+
+.language-option:hover {
+  color: var(--color-text);
+  background: var(--color-surface-light);
+}
+
+.language-option.active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    margin-left: 0;
+  }
 }
 
 /* Footer */
