@@ -1,26 +1,28 @@
-# Portafolio de Bernard 🚀
+# Mi Portafolio
 
-¡Hola, sea bienvenido/a a mi portafolio! 👋
+Este es el repositorio de mi portafolio personal, donde muestro mis habilidades y proyectos como desarrollador web y diseñador gráfico.
 
-Dentro de este portafolio, encontrarás una variedad de proyectos que destacan mi compromiso con la creación de soluciones visuales y funcionales. Algunos de los puntos destacados incluyen:
+## Tecnologías Utilizadas
 
-* Sitio web de Portafolio Personal 🌐
-Una vitrina en línea que refleja mi estilo y habilidades, mostrando mi trabajo de manera única y cautivadora.
+- **HTML5**: Para la estructura del contenido.
+- **CSS3**: Para el diseño y la presentación visual.
+- **JavaScript**: Para la interactividad y funcionalidad del sitio.
+- **Font Awesome**: Para los iconos utilizados en el sitio.
 
-* Blog sobre Desarrollo Web 📝
-Compartiendo ideas, aprendizajes y novedades del mundo del desarrollo web, demostrando mi participación activa en la comunidad y mi interés continuo en el campo.
+## Estructura del Proyecto
 
-* Portafólio de Trabajos de Diseño 🎨
-Proyectos que exploran mi mirada creativa y habilidades de diseño, brindando una visión completa de mi conjunto de habilidades.
+- `index.html`: El archivo principal que contiene la estructura del sitio.
+- `style/`: Carpeta que contiene los archivos CSS.
+  - `styles.css`: Archivo principal de estilos.
+- `img/`: Carpeta que contiene las imágenes utilizadas en el sitio.
+- `js/`: Carpeta que contiene los archivos JavaScript.
 
-### Tecnologías Utilizadas
-<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
-<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
-<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+## Secciones del Sitio
 
-Este portafolio también proporciona información detallada sobre mis habilidades técnicas, herramientas dominadas y experiencias personales. Estoy entusiasmado por compartir mi trayectoria y contribuir a proyectos innovadores en el futuro.
-
-¡Siéntete libre de explorar y conocer más sobre mi trabajo y recorrido en el desarrollo front-end! 🚀
-
-**Visita mi portafolio:** [bernard-portfolio.netlify.app](https://bernard-portfolio.netlify.app/)
-
+1. **Header**: Contiene el logo y el menú de navegación.
+2. **Hero**: Sección de bienvenida con un mensaje introductorio.
+3. **Sobre Mí**: Información sobre mí y mis habilidades.
+4. **Servicios**: Los servicios que ofrezco.
+5. **Portafolio**: Muestra de mis proyectos.
+6. **Contacto**: Información de contacto y un formulario para enviar mensajes.
+7. **Footer**: Enlaces adicionales y redes sociales.
