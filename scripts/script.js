@@ -84,41 +84,6 @@ window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
 /**
- * Configura el botón de alternancia entre modo claro y oscuro
- * Esta función maneja la funcionalidad del tema oscuro/claro en la página
- */
-function setupDarkModeToggle() {
-  // Crear y configurar el botón de alternancia de tema
-  const toggle = document.createElement('div');
-  toggle.className = 'theme-toggle';
-  toggle.innerHTML = '<i class="fas fa-moon"></i>';
-  document.querySelector('header .header-content').appendChild(toggle);
-  
-  // Verificar si hay una preferencia de tema guardada en localStorage
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
-  if (isDarkMode) {
-      // Si el modo oscuro estaba activo, aplicar modo claro
-      document.body.classList.add('light-mode');
-      toggle.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-  
-  // Configurar el evento click para cambiar entre temas
-  toggle.addEventListener('click', () => {
-      // Alternar la clase light-mode en el body
-      document.body.classList.toggle('light-mode');
-      // Verificar el modo actual
-      const isLightMode = document.body.classList.contains('light-mode');
-      // Actualizar el ícono según el modo actual
-      toggle.innerHTML = isLightMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-      // Guardar la preferencia del usuario en localStorage
-      localStorage.setItem('darkMode', isLightMode);
-  });
-}
-
-// Inicializar el toggle de tema cuando el DOM esté completamente cargado
-document.addEventListener('DOMContentLoaded', setupDarkModeToggle);
-
-/**
  * Configuración de particles.js para crear el efecto de partículas animadas en el fondo
  * Se ejecuta cuando el DOM está completamente cargado
  */
