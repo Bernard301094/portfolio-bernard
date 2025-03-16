@@ -1,0 +1,20 @@
+/* Estilos críticos de FontAwesome */
+.fa,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Incluir solo las definiciones de iconos críticos necesarios */
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-linkedin:before {
+  content: "\f08c";
+}
+/* Agregar otros iconos críticos según sea necesario */

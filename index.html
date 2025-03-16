@@ -12,16 +12,25 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>" type="image/svg+xml">
   
   <!-- Pre-carga del archivo CSS principal para mejorar el rendimiento -->
-  <link rel="preload" href="style/styles.css" as="style">
+  <link rel="preload" href="css/styles.css" as="style">
   
   <!-- Enlace al archivo CSS principal -->
-  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   
-  <!-- Carga de Font Awesome para iconos -->
-  <!-- Reemplaza la carga completa de Font Awesome por solo los iconos que necesitas -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+  <!-- Estilos críticos -->
+  <style>
+    @import url('css/critical.css');
+  </style>
+
+  <!-- Cargar CSS no crítico de forma asíncrona -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback para navegadores sin JavaScript -->
+  <noscript>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+  </noscript>
 </head>
 
 <body>
