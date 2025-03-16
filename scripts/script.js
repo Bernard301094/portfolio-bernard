@@ -167,3 +167,20 @@ if ('serviceWorker' in navigator) {
       });
   });
 }
+
+/**
+ * Manejador del menú móvil
+ * Esta función controla la apertura/cierre del menú en dispositivos móviles
+ * Utiliza requestAnimationFrame para optimizar el rendimiento de la animación
+ */
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  // Obtiene la referencia al menú móvil
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  // Usa requestAnimationFrame para mejorar rendimiento al animar
+  requestAnimationFrame(() => {
+    // Alterna la clase 'is-open' para mostrar/ocultar el menú
+    // Esta clase controla la animación definida en CSS
+    mobileMenu.classList.toggle('is-open');
+  });
+});

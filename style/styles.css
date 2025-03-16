@@ -851,22 +851,45 @@ footer h4::after {
   }
 }
 
-
-
-
-
-
-
+/* Configuración del contenedor de partículas particles.js */
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  position: absolute;  /* Posicionamiento absoluto para cubrir todo el hero */
+  width: 100%;        /* Ancho completo */
+  height: 100%;       /* Alto completo */
+  top: 0;            /* Alineado al tope */
+  left: 0;           /* Alineado a la izquierda */
+  z-index: 0;        /* Capa base para que esté detrás del contenido */
 }
 
+/* Asegura que el contenido del hero esté por encima de las partículas */
 .hero-content {
-  z-index: 1;
-  position: relative;
+  z-index: 1;        /* Capa superior a las partículas */
+  position: relative; /* Posicionamiento relativo para mantener el z-index */
+}
+
+
+
+/* Reemplaza las propiedades que causan lag */
+.mobile-menu {
+  /* Usar transform en lugar de propiedades que causan reflow */
+  transform: translateX(-100%);
+  
+  /* Especificar solo las propiedades necesarias */
+  transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  
+  /* Indicar al navegador que se prepare para animaciones */
+  will-change: transform;
+  
+  /* Otros estilos necesarios */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
 }
