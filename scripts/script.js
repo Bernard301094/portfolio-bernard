@@ -82,3 +82,123 @@ const animateOnScroll = () => {
 
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
+
+/**
+ * Configura el botón de alternancia entre modo claro y oscuro
+ * Esta función maneja la funcionalidad del tema oscuro/claro en la página
+ */
+function setupDarkModeToggle() {
+  // Crear y configurar el botón de alternancia de tema
+  const toggle = document.createElement('div');
+  toggle.className = 'theme-toggle';
+  toggle.innerHTML = '<i class="fas fa-moon"></i>';
+  document.querySelector('header .header-content').appendChild(toggle);
+  
+  // Verificar si hay una preferencia de tema guardada en localStorage
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (isDarkMode) {
+      // Si el modo oscuro estaba activo, aplicar modo claro
+      document.body.classList.add('light-mode');
+      toggle.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+  
+  // Configurar el evento click para cambiar entre temas
+  toggle.addEventListener('click', () => {
+      // Alternar la clase light-mode en el body
+      document.body.classList.toggle('light-mode');
+      // Verificar el modo actual
+      const isLightMode = document.body.classList.contains('light-mode');
+      // Actualizar el ícono según el modo actual
+      toggle.innerHTML = isLightMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      // Guardar la preferencia del usuario en localStorage
+      localStorage.setItem('darkMode', isLightMode);
+  });
+}
+
+// Inicializar el toggle de tema cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', setupDarkModeToggle);
+
+/**
+ * Configuración de particles.js para crear el efecto de partículas animadas en el fondo
+ * Se ejecuta cuando el DOM está completamente cargado
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  particlesJS('particles-js', {
+    particles: {
+      // Configuración básica de las partículas
+      number: { 
+        value: 80,  // Cantidad de partículas
+        density: { enable: true, value_area: 800 } // Densidad de partículas por área
+      },
+      color: { value: "#6366f1" }, // Color de las partículas
+      shape: { type: "circle" }, // Forma de las partículas
+      opacity: { 
+        value: 0.5, // Opacidad de las partículas
+        random: false // Opacidad aleatoria desactivada
+      },
+      size: { 
+        value: 3, // Tamaño de las partículas
+        random: true // Tamaño aleatorio activado
+      },
+      
+      // Configuración de las líneas entre partículas
+      line_linked: {
+        enable: true, // Activar líneas entre partículas
+        distance: 150, // Distancia máxima para crear líneas
+        color: "#06b6d4", // Color de las líneas
+        opacity: 0.4, // Opacidad de las líneas
+        width: 1 // Grosor de las líneas
+      },
+      
+      // Configuración del movimiento de las partículas
+      move: {
+        enable: true, // Activar movimiento
+        speed: 2, // Velocidad del movimiento
+        direction: "none", // Dirección aleatoria
+        random: false, // Movimiento aleatorio desactivado
+        straight: false, // Movimiento en línea recta desactivado
+        out_mode: "out", // Comportamiento al salir del canvas
+        bounce: false // Rebote desactivado
+      }
+    },
+    
+    // Configuración de la interactividad
+    interactivity: {
+      detect_on: "canvas", // Detectar interacción en el canvas
+      events: {
+        onhover: { 
+          enable: true, // Activar efecto al pasar el mouse
+          mode: "repulse" // Modo repulsión al pasar el mouse
+        },
+        onclick: { 
+          enable: true, // Activar efecto al hacer clic
+          mode: "push" // Añadir partículas al hacer clic
+        },
+        resize: true // Ajustar al redimensionar la ventana
+      }
+    },
+    retina_detect: true // Soporte para pantallas retina
+  });
+});
+
+/**
+ * Registro del Service Worker para funcionalidad offline
+ * Este código verifica si el navegador soporta Service Workers y lo registra
+ */
+
+// Verifica si el navegador soporta Service Workers
+if ('serviceWorker' in navigator) {
+  // Espera a que la página se cargue completamente
+  window.addEventListener('load', () => {
+    // Intenta registrar el Service Worker ubicado en '/service-worker.js'
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        // Si el registro es exitoso, muestra confirmación en consola
+        console.log('SW registered:', registration);
+      })
+      .catch(error => {
+        // Si hay un error en el registro, muestra el error en consola
+        console.log('SW registration failed:', error);
+      });
+  });
+}
