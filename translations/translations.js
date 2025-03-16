@@ -31,6 +31,10 @@ const translations = {
     skill_teamwork: "Trabajo en Equipo",
     skill_learning: "Aprendizaje Continuo",
     skill_problem: "Resolución de Problemas",
+    skill_communication: "Comunicación Efectiva",
+    skill_organization: "Organización y Planificación",
+    skill_creativity: "Creatividad e Innovación",
+    skill_empathy: "Empatía y Escucha Activa",
     
     // Servicios
     services_title: "Servicios",
@@ -71,7 +75,7 @@ const translations = {
     // Footer
     footer_links: "Enlaces",
     footer_social: "Redes Sociales",
-    footer_copy: "© 2025 Mi Portafolio. Todos los derechos reservados."
+    footer_copy: "Mi Portafolio. Todos los derechos reservados."
   },
   
   en: {
@@ -105,6 +109,10 @@ const translations = {
     skill_teamwork: "Teamwork",
     skill_learning: "Continuous Learning",
     skill_problem: "Problem Solving",
+    skill_communication: "Effective Communication",
+    skill_organization: "Organization and Planning",
+    skill_creativity: "Creativity and Innovation",
+    skill_empathy: "Empathy and Active Listening",
     
     // Services
     services_title: "Services",
@@ -145,7 +153,7 @@ const translations = {
     // Footer
     footer_links: "Links",
     footer_social: "Social Media",
-    footer_copy: "© 2025 My Portfolio. All rights reserved."
+    footer_copy: "My Portfolio. All rights reserved."
   },
   
   pt: {
@@ -179,6 +187,10 @@ const translations = {
     skill_teamwork: "Trabalho em Equipe",
     skill_learning: "Aprendizado Contínuo",
     skill_problem: "Resolução de Problemas",
+    skill_communication: "Comunicação Efetiva",
+    skill_organization: "Organização e Planejamento",
+    skill_creativity: "Criatividade e Inovação",
+    skill_empathy: "Empatia e Escuta Ativa",
     
     // Serviços
     services_title: "Serviços",
@@ -219,6 +231,6 @@ const translations = {
     // Rodapé
     footer_links: "Links",
     footer_social: "Redes Sociais",
-    footer_copy: "© 2025 Meu Portfólio. Todos os direitos reservados."
+    footer_copy: "Meu Portfólio. Todos os direitos reservados."
   }
 };

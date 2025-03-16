@@ -331,7 +331,8 @@ header.scrolled {
   gap: 1rem;
 }
 
-.hard-skills li, .soft-skills li {
+.hard-skills li, 
+.soft-skills li {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -339,6 +340,15 @@ header.scrolled {
   background: var(--color-surface);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
+  height: 4.5rem;
+  min-width: 12rem;
+  max-width: 100%;
+}
+
+.hard-skills li span, .soft-skills li span {
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.2; /* Mejor espaciado entre líneas */
 }
 
 .skills-category li:hover {
@@ -695,6 +705,13 @@ footer h4::after {
   height: 3px;
   background: var(--color-primary);
   border-radius: 1.5px;
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 2rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
 }
 
 /* Animaciones para elementos en scroll */
