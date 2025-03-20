@@ -893,3 +893,207 @@ footer h4::after {
   transform: translateX(0);
   visibility: visible;
 }
+
+
+/* Estilos para la sección de Trayectoria Profesional */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.resume-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.resume-card:hover {
+  transform: translateY(-10px);
+}
+
+.resume-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-surface-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm), inset 1px 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.resume-card-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  background: linear-gradient(
+    to right, 
+    var(--color-primary) 0%, 
+    var(--color-secondary) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.resume-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resume-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.resume-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.resume-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.resume-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background: linear-gradient(
+    to right, 
+    var(--color-primary-dark), 
+    var(--color-primary)
+  );
+  color: var(--color-white);
+  border-radius: var(--border-radius-xs);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.resume-details {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.resume-details li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.resume-details li::before {
+  content: "•";
+  color: var(--color-secondary);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* Estilos para los cursos */
+.resume-course {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.resume-course:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.course-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-surface-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  box-shadow: var(--shadow-sm), inset 1px 1px 1px rgba(255, 255, 255, 0.05);
+  flex-shrink: 0;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-info h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.course-info p {
+  margin: 0.5rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Animación para cargar los cards */
+.resume-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.resume-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resume-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.resume-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.resume-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .resume-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .resume-card:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .resume-card:nth-child(3) {
+    grid-column: span 1;
+  }
+}

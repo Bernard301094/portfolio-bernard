@@ -3,6 +3,7 @@ const translations = {
   es: {
     // Navegación
     nav_about: "Sobre Mí",
+    nav_resume: "Trayectoria",
     nav_services: "Servicios",
     nav_portfolio: "Portafolio",
     nav_contact: "Contacto",
@@ -17,6 +18,50 @@ const translations = {
     about_p1: "Soy estudiante de Análisis y Desarrollo de Sistemas con especialización en desarrollo web full-stack. Estoy en proceso de aprendizaje constante, enfocado en adquirir conocimientos de programación front-end y back-end para crear aplicaciones web completas.",
     about_p2: "Siempre en busca de aprendizaje y retos, disfruto colaborando en equipo, resolviendo problemas y desarrollando soluciones prácticas y eficientes. La capacidad de adaptación a nuevos entornos y el aprendizaje continuo son características que me motivan para crecer y contribuir positivamente al sector tecnológico.",
     about_p3: "Mi objetivo es continuar mi formación, aplicar mis conocimientos en proyectos reales y eventualmente convertirme en un desarrollador full stack profesional.",
+
+     // Sección de Trayectoria
+     resume_title: "Trayectoria Profesional",
+     experience_title: "Experiencia Laboral",
+     education_title: "Educación",
+     courses_title: "Cursos y Certificaciones",
+     
+     // Experiencia
+     job1_title: "Desarrollador Web Junior",
+     job1_date: "2022 - Presente",
+     job1_desc: "Desarrollo de interfaces de usuario con React, implementación de APIs RESTful y mantenimiento de bases de datos SQL.",
+     job1_detail1: "Desarrollo de componentes frontend con React y CSS moderno",
+     job1_detail2: "Integración con APIs de terceros",
+     job1_detail3: "Optimización de rendimiento y experiencia de usuario",
+     job2_title: "Pasante de Desarrollo",
+     job2_date: "2021 - 2022",
+     job2_desc: "Colaboración en proyectos web, aprendizaje de metodologías ágiles y desarrollo de habilidades técnicas.",
+     job2_detail1: "Participación en reuniones de planificación",
+     job2_detail2: "Desarrollo de funcionalidades menores",
+     
+     // Educación
+     edu1_title: "Análisis y Desarrollo de Sistemas",
+     edu1_date: "2020 - 2023",
+     edu1_desc: "Tecnólogo en Análisis y Desarrollo de Sistemas con enfoque en desarrollo web y aplicaciones.",
+     edu1_detail1: "Programación orientada a objetos",
+     edu1_detail2: "Desarrollo web full stack",
+     edu1_detail3: "Bases de datos y modelado de datos",
+     edu2_title: "Bachillerato en Ciencias",
+     edu2_date: "2017 - 2019",
+     edu2_desc: "Formación general con énfasis en matemáticas y ciencias de la computación.",
+     
+     // Cursos
+     course1_title: "React - La Guía Completa",
+     course1_provider: "Udemy",
+     course1_date: "2023",
+     course2_title: "Node.js para Desarrolladores",
+     course2_provider: "Coursera",
+     course2_date: "2022",
+     course3_title: "SQL y Bases de Datos Relacionales",
+     course3_provider: "FreeCodeCamp",
+     course3_date: "2022",
+     course4_title: "Git y GitHub Profesional",
+     course4_provider: "Platzi",
+     course4_date: "2021",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -81,6 +126,7 @@ const translations = {
   en: {
     // Navigation
     nav_about: "About Me",
+    nav_resume: "Career Path",
     nav_services: "Services",
     nav_portfolio: "Portfolio",
     nav_contact: "Contact",
@@ -95,6 +141,50 @@ const translations = {
     about_p1: "I am a Systems Analysis and Development student specializing in full-stack web development. I am in a constant learning process, focused on acquiring front-end and back-end programming knowledge to create complete web applications.",
     about_p2: "Always seeking learning and challenges, I enjoy collaborating in teams, solving problems, and developing practical and efficient solutions. The ability to adapt to new environments and continuous learning are characteristics that motivate me to grow and contribute positively to the technology sector.",
     about_p3: "My goal is to continue my education, apply my knowledge to real projects, and eventually become a professional full stack developer.",
+
+     // Sección de Trayectoria
+     resume_title: "Professional Background",
+     experience_title: "Work Experience",
+     education_title: "Education",
+     courses_title: "Courses & Certifications",
+     
+     // Experiencia
+     job1_title: "Junior Web Developer",
+     job1_date: "2022 - Present",
+     job1_desc: "Development of user interfaces with React, implementation of RESTful APIs, and maintenance of SQL databases.",
+     job1_detail1: "Frontend component development with React and modern CSS",
+     job1_detail2: "Integration with third-party APIs",
+     job1_detail3: "Performance and user experience optimization",
+     job2_title: "Development Intern",
+     job2_date: "2021 - 2022",
+     job2_desc: "Collaboration on web projects, learning agile methodologies, and developing technical skills.",
+     job2_detail1: "Participation in planning meetings",
+     job2_detail2: "Development of minor functionalities",
+     
+     // Educación
+     edu1_title: "Systems Analysis and Development",
+     edu1_date: "2020 - 2023",
+     edu1_desc: "Technologist in Systems Analysis and Development with a focus on web development and applications.",
+     edu1_detail1: "Object-oriented programming",
+     edu1_detail2: "Full stack web development",
+     edu1_detail3: "Databases and data modeling",
+     edu2_title: "Bachelor of Science",
+     edu2_date: "2017 - 2019",
+     edu2_desc: "General education with emphasis on mathematics and computer science.",
+     
+     // Cursos
+     course1_title: "React - The Complete Guide",
+     course1_provider: "Udemy",
+     course1_date: "2023",
+     course2_title: "Node.js for Developers",
+     course2_provider: "Coursera",
+     course2_date: "2022",
+     course3_title: "SQL and Relational Databases",
+     course3_provider: "FreeCodeCamp",
+     course3_date: "2022",
+     course4_title: "Professional Git and GitHub",
+     course4_provider: "Platzi",
+     course4_date: "2021",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -159,6 +249,7 @@ const translations = {
   pt: {
     // Navegação
     nav_about: "Sobre Mim",
+    nav_resume: "Trajetória",
     nav_services: "Serviços",
     nav_portfolio: "Portfólio",
     nav_contact: "Contato",
@@ -173,6 +264,50 @@ const translations = {
     about_p1: "Sou estudante de Análise e Desenvolvimento de Sistemas com especialização em desenvolvimento web full-stack. Estou em constante processo de aprendizagem, focado em adquirir conhecimentos de programação front-end e back-end para criar aplicações web completas.",
     about_p2: "Sempre em busca de aprendizado e desafios, gosto de colaborar em equipe, resolver problemas e desenvolver soluções práticas e eficientes. A capacidade de adaptação a novos ambientes e o aprendizado contínuo são características que me motivam a crescer e contribuir positivamente para o setor de tecnologia.",
     about_p3: "Meu objetivo é continuar minha formação, aplicar meus conhecimentos em projetos reais e eventualmente me tornar um desenvolvedor full stack profissional.",
+    
+    // Seção de Trajetória
+    resume_title: "Trajetória Profissional",
+    experience_title: "Experiência Profissional",
+    education_title: "Educação",
+    courses_title: "Cursos e Certificações",
+    
+    // Experiência
+    job1_title: "Desenvolvedor Web Júnior",
+    job1_date: "2022 - Presente",
+    job1_desc: "Desenvolvimento de interfaces de usuário com React, implementação de APIs RESTful e manutenção de bancos de dados SQL.",
+    job1_detail1: "Desenvolvimento de componentes frontend com React e CSS moderno",
+    job1_detail2: "Integração com APIs de terceiros",
+    job1_detail3: "Otimização de desempenho e experiência do usuário",
+    job2_title: "Estagiário de Desenvolvimento",
+    job2_date: "2021 - 2022",
+    job2_desc: "Colaboração em projetos web, aprendizado de metodologias ágeis e desenvolvimento de habilidades técnicas.",
+    job2_detail1: "Participação em reuniões de planejamento",
+    job2_detail2: "Desenvolvimento de funcionalidades menores",
+    
+    // Educação
+    edu1_title: "Análise e Desenvolvimento de Sistemas",
+    edu1_date: "2020 - 2023",
+    edu1_desc: "Tecnólogo em Análise e Desenvolvimento de Sistemas com foco em desenvolvimento web e aplicações.",
+    edu1_detail1: "Programação orientada a objetos",
+    edu1_detail2: "Desenvolvimento web full stack",
+    edu1_detail3: "Bancos de dados e modelagem de dados",
+    edu2_title: "Ensino Médio em Ciências",
+    edu2_date: "2017 - 2019",
+    edu2_desc: "Formação geral com ênfase em matemática e ciências da computação.",
+    
+    // Cursos
+    course1_title: "React - O Guia Completo",
+    course1_provider: "Udemy",
+    course1_date: "2023",
+    course2_title: "Node.js para Desenvolvedores",
+    course2_provider: "Coursera",
+    course2_date: "2022",
+    course3_title: "SQL e Bancos de Dados Relacionais",
+    course3_provider: "FreeCodeCamp",
+    course3_date: "2022",
+    course4_title: "Git e GitHub Profissional",
+    course4_provider: "Platzi",
+    course4_date: "2021",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -232,5 +367,7 @@ const translations = {
     footer_links: "Links",
     footer_social: "Redes Sociais",
     footer_copy: "Meu Portfólio. Todos os direitos reservados."
-  }
+}
 };
+
+
