@@ -10,12 +10,12 @@ const translations = {
     
     // Hero
     hero_title: "Bienvenido a mi portafolio",
-    hero_subtitle: "Estudiante de Desarrollo Full Stack y apasionado por la tecnología",
+    hero_subtitle: "Estudiante de Desarrollo Web y apasionado por la tecnología",
     hero_button: "Saber Más",
     
     // Sobre Mí
     about_title: "Sobre Mí",
-    about_p1: "Soy estudiante de Análisis y Desarrollo de Sistemas con especialización en desarrollo web full-stack. Estoy en proceso de aprendizaje constante, enfocado en adquirir conocimientos de programación front-end y back-end para crear aplicaciones web completas.",
+    about_p1: "Soy estudiante de Análisis y Desarrollo de Sistemas con especialización en desarrollo web. Estoy en proceso de aprendizaje constante, enfocado en adquirir conocimientos de programación front-end y back-end para crear aplicaciones web completas.",
     about_p2: "Siempre en busca de aprendizaje y retos, disfruto colaborando en equipo, resolviendo problemas y desarrollando soluciones prácticas y eficientes. La capacidad de adaptación a nuevos entornos y el aprendizaje continuo son características que me motivan para crecer y contribuir positivamente al sector tecnológico.",
     about_p3: "Mi objetivo es continuar mi formación, aplicar mis conocimientos en proyectos reales y eventualmente convertirme en un desarrollador full stack profesional.",
 
@@ -133,12 +133,12 @@ const translations = {
     
     // Hero
     hero_title: "Welcome to my portfolio",
-    hero_subtitle: "Full Stack Development Student and technology enthusiast",
+    hero_subtitle: "Web Development Student and technology enthusiast",
     hero_button: "Learn More",
     
     // About Me
     about_title: "About Me",
-    about_p1: "I am a Systems Analysis and Development student specializing in full-stack web development. I am in a constant learning process, focused on acquiring front-end and back-end programming knowledge to create complete web applications.",
+    about_p1: "I am a Systems Analysis and Development student specializing in web development. I am in a constant learning process, focused on acquiring front-end and back-end programming knowledge to create complete web applications.",
     about_p2: "Always seeking learning and challenges, I enjoy collaborating in teams, solving problems, and developing practical and efficient solutions. The ability to adapt to new environments and continuous learning are characteristics that motivate me to grow and contribute positively to the technology sector.",
     about_p3: "My goal is to continue my education, apply my knowledge to real projects, and eventually become a professional full stack developer.",
 
@@ -256,12 +256,12 @@ const translations = {
     
     // Hero
     hero_title: "Bem-vindo ao meu portfólio",
-    hero_subtitle: "Estudante de Desenvolvimento Full Stack e apaixonado por tecnologia",
+    hero_subtitle: "Estudante de Desenvolvimento web e apaixonado por tecnologia",
     hero_button: "Saiba Mais",
     
     // Sobre Mim
     about_title: "Sobre Mim",
-    about_p1: "Sou estudante de Análise e Desenvolvimento de Sistemas com especialização em desenvolvimento web full-stack. Estou em constante processo de aprendizagem, focado em adquirir conhecimentos de programação front-end e back-end para criar aplicações web completas.",
+    about_p1: "Sou estudante de Análise e Desenvolvimento de Sistemas com especialização em desenvolvimento web. Estou em constante processo de aprendizagem, focado em adquirir conhecimentos de programação front-end e back-end para criar aplicações web completas.",
     about_p2: "Sempre em busca de aprendizado e desafios, gosto de colaborar em equipe, resolver problemas e desenvolver soluções práticas e eficientes. A capacidade de adaptação a novos ambientes e o aprendizado contínuo são características que me motivam a crescer e contribuir positivamente para o setor de tecnologia.",
     about_p3: "Meu objetivo é continuar minha formação, aplicar meus conhecimentos em projetos reais e eventualmente me tornar um desenvolvedor full stack profissional.",
     
