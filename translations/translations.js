@@ -40,14 +40,11 @@ const translations = {
      
      // Educación
      edu1_title: "Análisis y Desarrollo de Sistemas",
-     edu1_date: "2020 - 2023",
-     edu1_desc: "Tecnólogo en Análisis y Desarrollo de Sistemas con enfoque en desarrollo web y aplicaciones.",
+     edu1_date: "01/2024 - 06/2026",
+     edu1_desc: "Tecnólogo en Análisis y Desarrollo de Sistemas - Estácio",
      edu1_detail1: "Programación orientada a objetos",
      edu1_detail2: "Desarrollo web full stack",
      edu1_detail3: "Bases de datos y modelado de datos",
-     edu2_title: "Bachillerato en Ciencias",
-     edu2_date: "2017 - 2019",
-     edu2_desc: "Formación general con énfasis en matemáticas y ciencias de la computación.",
      
      // Cursos
      course1_title: "React - La Guía Completa",
@@ -163,15 +160,12 @@ const translations = {
      
      // Educación
      edu1_title: "Systems Analysis and Development",
-     edu1_date: "2020 - 2023",
-     edu1_desc: "Technologist in Systems Analysis and Development with a focus on web development and applications.",
+     edu1_date: "01/2024 - 06/2026",
+     edu1_desc: "Technologist in Systems Analysis and Development - Estácio",
      edu1_detail1: "Object-oriented programming",
      edu1_detail2: "Full stack web development",
      edu1_detail3: "Databases and data modeling",
-     edu2_title: "Bachelor of Science",
-     edu2_date: "2017 - 2019",
-     edu2_desc: "General education with emphasis on mathematics and computer science.",
-     
+
      // Cursos
      course1_title: "React - The Complete Guide",
      course1_provider: "Udemy",
@@ -286,14 +280,11 @@ const translations = {
     
     // Educação
     edu1_title: "Análise e Desenvolvimento de Sistemas",
-    edu1_date: "2020 - 2023",
-    edu1_desc: "Tecnólogo em Análise e Desenvolvimento de Sistemas com foco em desenvolvimento web e aplicações.",
+    edu1_date: "01/2024 - 06/2026",
+    edu1_desc: "Tecnólogo em Análise e Desenvolvimento de Sistemas - Estácio",
     edu1_detail1: "Programação orientada a objetos",
     edu1_detail2: "Desenvolvimento web full stack",
     edu1_detail3: "Bancos de dados e modelagem de dados",
-    edu2_title: "Ensino Médio em Ciências",
-    edu2_date: "2017 - 2019",
-    edu2_desc: "Formação geral com ênfase em matemática e ciências da computação.",
     
     // Cursos
     course1_title: "React - O Guia Completo",
