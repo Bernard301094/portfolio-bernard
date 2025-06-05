@@ -47,18 +47,18 @@ const translations = {
      edu1_detail3: "Bases de datos y modelado de datos",
      
      // Cursos
-     course1_title: "React - La Guía Completa",
-     course1_provider: "Udemy",
-     course1_date: "2023",
-     course2_title: "Node.js para Desarrolladores",
-     course2_provider: "Coursera",
-     course2_date: "2022",
-     course3_title: "SQL y Bases de Datos Relacionales",
-     course3_provider: "FreeCodeCamp",
+     course1_title: "Desarrollo Back-end utilizando Java",
+     course1_provider: "Oracle Next Education + Alura",
+     course1_date: "Cursando",
+     course2_title: "Bootstrap 5",
+     course2_provider: "Udemy",
+     course2_date: "2024",
+     course3_title: "Git + Github",
+     course3_provider: "Udemy",
      course3_date: "2022",
-     course4_title: "Git y GitHub Profesional",
-     course4_provider: "Platzi",
-     course4_date: "2021",
+     course4_title: "Desarrollo Front-End",
+     course4_provider: "Toti Diversidade",
+     course4_date: "2022",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -167,18 +167,18 @@ const translations = {
      edu1_detail3: "Databases and data modeling",
 
      // Cursos
-     course1_title: "React - The Complete Guide",
-     course1_provider: "Udemy",
-     course1_date: "2023",
-     course2_title: "Node.js for Developers",
-     course2_provider: "Coursera",
-     course2_date: "2022",
-     course3_title: "SQL and Relational Databases",
-     course3_provider: "FreeCodeCamp",
+     course1_title: "Back-end development using Java",
+     course1_provider: "Oracle Next Education + Alura",
+     course1_date: "In Progress",
+     course2_title: "Bootstrap 5",
+     course2_provider: "Udemy",
+     course2_date: "2024",
+     course3_title: "Git + Github",
+     course3_provider: "Udemy",
      course3_date: "2022",
-     course4_title: "Professional Git and GitHub",
-     course4_provider: "Platzi",
-     course4_date: "2021",
+     course4_title: "Front-End Development",
+     course4_provider: "Toti Diversidade",
+     course4_date: "2022",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -287,18 +287,18 @@ const translations = {
     edu1_detail3: "Bancos de dados e modelagem de dados",
     
     // Cursos
-    course1_title: "React - O Guia Completo",
-    course1_provider: "Udemy",
-    course1_date: "2023",
-    course2_title: "Node.js para Desenvolvedores",
-    course2_provider: "Coursera",
-    course2_date: "2022",
-    course3_title: "SQL e Bancos de Dados Relacionais",
-    course3_provider: "FreeCodeCamp",
+    course1_title: "Desenvolvimento Back-end utilizando Java",
+    course1_provider: "Oracle Next Education + Alura",
+    course1_date: "Cursando",
+    course2_title: "Bootstrap 5",
+    course2_provider: "Udemy",
+    course2_date: "2024",
+    course3_title: "Git + Github",
+    course3_provider: "Udemy",
     course3_date: "2022",
-    course4_title: "Git e GitHub Profissional",
-    course4_provider: "Platzi",
-    course4_date: "2021",
+    course4_title: "Desenvolvimento Front-End",
+    course4_provider: "Toti Diversidade",
+    course4_date: "2022",
     
     // Skills
     skills_hard: "Hard Skills",
@@ -360,5 +360,3 @@ const translations = {
     footer_copy: "Meu Portfólio. Todos os direitos reservados."
 }
 };
-
-
